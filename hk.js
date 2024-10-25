@@ -8,9 +8,11 @@ const password = '2405@ArnavHackerRank'
 
 
 let browserOpen = puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ['--start-maximised'],
-    defaultViewport: null
+    defaultViewport: null,
+    executablePath: '/usr/bin/google-chrome', // Path where Chrome is typically installed
+    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Required flags for running Puppeteer on some cloud providers
 })
 
 let page
