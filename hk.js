@@ -11,7 +11,6 @@ let browserOpen = puppeteer.launch({
     headless: true,
     args: ['--start-maximised'],
     defaultViewport: null,
-    // executablePath: '/usr/bin/google-chrome', // Path where Chrome is typically installed
     args: ['--no-sandbox', '--disable-setuid-sandbox'] // Required flags for running Puppeteer on some cloud providers
 })
 
