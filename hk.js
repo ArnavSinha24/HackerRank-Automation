@@ -8,10 +8,10 @@ const password = '2405@ArnavHackerRank'
 
 
 let browserOpen = puppeteer.launch({
-    headless: true,
+    headless: false,
     args: ['--start-maximised'],
     defaultViewport: null,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Required flags for running Puppeteer on some cloud providers
+    // args: ['--no-sandbox', '--disable-setuid-sandbox'] // Required flags for running Puppeteer on some cloud providers
 })
 
 let page
